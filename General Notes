@@ -1,0 +1,25 @@
+Check Ollama is installed and running 
+$ tasklist | findstr ollama
+
+To start ollama
+$ ollama serve/start
+
+PS C:\Users\Akhat> python -m venv venv
+PS C:\Users\Akhat> .\venv\Scripts\activate
+.\venv\Scripts\activate : File C:\Users\Akhat\venv\Scripts\Activate.ps1 cannot be loaded because running scripts is disabled on this system. For more
+information, see about_Execution_Policies at https:/go.microsoft.com/fwlink/?LinkID=135170.
+At line:1 char:1
++ .\venv\Scripts\activate
++ ~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : SecurityError: (:) [], PSSecurityException
+    + FullyQualifiedErrorId : UnauthorizedAccess
+
+I have created isolated environment in my windows machine, and try to run .\venv\Scripts\activate , but am getting above error.
+
+How to resolve this issue and how to create isolated environment
+
+Immediate Solution
+You can temporarily bypass the execution policy for just this session by running:
+$ powershellCopySet-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+Then try activating your virtual environment again:
+$ powershellCopy.\venv\Scripts\activate
