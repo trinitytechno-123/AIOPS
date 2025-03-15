@@ -4,6 +4,7 @@ $ tasklist | findstr ollama
 To start ollama
 $ ollama serve/start
 
+*********************************************************************
 PS C:\Users\Akhat> python -m venv venv
 PS C:\Users\Akhat> .\venv\Scripts\activate
 .\venv\Scripts\activate : File C:\Users\Akhat\venv\Scripts\Activate.ps1 cannot be loaded because running scripts is disabled on this system. For more
@@ -23,3 +24,7 @@ You can temporarily bypass the execution policy for just this session by running
 $ powershellCopySet-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 Then try activating your virtual environment again:
 $ powershellCopy.\venv\Scripts\activate
+
+*************************************************************
+to edit notepad in powershell
+$powershell_ise <filename>
